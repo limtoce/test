@@ -46,6 +46,3 @@ def goback():
     img_path = os.path.join(UPLOAD_FOLDER,  ''.join(os.listdir(UPLOAD_FOLDER)))
     os.remove(img_path)
     return redirect(url_for('index'))
-
-if __name__ == "__main__":
-    app.run()
